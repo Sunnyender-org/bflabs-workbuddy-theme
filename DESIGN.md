@@ -76,8 +76,7 @@ responsive type, and accessibility media queries.
 
 ## Verification targets
 
-- WorkBuddy AI 5.3.11 on macOS.
-- WorkBuddy 5.3.14 on Windows.
+- WorkBuddy 5.3.14 on macOS and Windows.
 - 1440 × 900, 390 × 844, and the 375px responsive acceptance width.
 - Sidebar, home, task, composer, menu, dialog, code, terminal, detail pane,
   route change, restore, reduced motion, reduced transparency, and contrast.

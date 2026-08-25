@@ -24,6 +24,7 @@ test('BF Labs theme passes its static contract', async () => {
   assert.deepEqual(result.warnings, [])
   assert.equal(result.theme.id, 'bflabs-studio')
   assert.equal(result.theme.version, '0.2.3')
+  assert.deepEqual(loadTheme(themeDirectory).manifest.verifiedWorkBuddy.map(({ platform }) => platform).sort(), ['macos', 'windows'])
 })
 
 test('theme CSS is scoped, local, reversible, and motion-aware', () => {

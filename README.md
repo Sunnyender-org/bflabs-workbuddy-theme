@@ -17,9 +17,11 @@
 
 `v0.2.3`
 
-- Windows WorkBuddy 5.3.14 已完成真实首页注入、DOM/token 读回、截图、恢复和无重启热应用验证。
-- macOS WorkBuddy AI 5.3.11 已完成安装包静态锚点验证，尚未完成登录态真机视觉矩阵。
+- Windows WorkBuddy 5.3.14 已完成真实登录态首页注入、DOM/token 读回、截图、恢复和无重启热应用验证。
+- macOS WorkBuddy 5.3.14 已完成相同的真实登录态首页、DOM/token、截图、恢复和热应用验证。
 - 完整任务页、菜单、代码、终端和升级兼容矩阵仍是后续验证项。
+
+完整路由矩阵通过前，`testedWorkBuddy` 保持为空；已验证表面单独记录在 `theme.json` 的 `verifiedWorkBuddy`。
 
 ## 安全边界
 

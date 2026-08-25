@@ -29,6 +29,18 @@
   },
   "testedWorkBuddy": [],
   "targetWorkBuddy": ["5.3.11", "5.3.14"],
+  "verifiedWorkBuddy": [
+    {
+      "version": "5.3.14",
+      "platform": "windows",
+      "surfaces": ["logged-in-welcome", "dom-probe", "screenshot", "restore", "hot-reapply"]
+    },
+    {
+      "version": "5.3.14",
+      "platform": "macos",
+      "surfaces": ["logged-in-welcome", "dom-probe", "screenshot", "restore", "hot-reapply"]
+    }
+  ],
   "sources": {
     "bflabsUi": "f49157ff586adf91f6ba21f00f1dbbbb36e0afc5",
     "appleDesign": "d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7"
