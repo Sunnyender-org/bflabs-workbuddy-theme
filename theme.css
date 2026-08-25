@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BF_SPACE_500__") format("woff2");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BF_SPACE_600__") format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BF_INTER_400__") format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BF_INTER_500__") format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BF_INTER_600__") format("woff2");
+}
+
+body[data-workbuddy-theme="bflabs-studio"] {
+  color-scheme: light;
+  --bf-color-charcoal: #111417;
+  --bf-color-ink: #1e2226;
+  --bf-color-graphite: #2f3338;
+  --bf-color-warm-white: #faf8f5;
+  --bf-color-orange: #ff6a33;
+  --bf-color-steel: #6b7177;
+  --bf-color-silver: #8f9499;
+  --bf-color-light-gray: #d9dce0;
+  --bf-color-soft-tone: #e7e2d7;
+  --bf-color-sand: #f1ece3;
+  --bf-color-pale-blue: #e8f1f7;
+  --bf-color-signal-blue: #4c7faf;
+  --bf-background: var(--bf-color-warm-white);
+  --bf-surface: color-mix(in srgb, var(--bf-color-charcoal) 3%, transparent);
+  --bf-surface-strong: var(--bf-color-charcoal);
+  --bf-foreground: var(--bf-color-charcoal);
+  --bf-foreground-muted: var(--bf-color-steel);
+  --bf-foreground-subtle: var(--bf-color-silver);
+  --bf-on-strong: var(--bf-color-warm-white);
+  --bf-accent: var(--bf-color-orange);
+  --bf-focus: var(--bf-color-orange);
+  --bf-divider: color-mix(in srgb, var(--bf-color-charcoal) 14%, transparent);
+  --bf-font-display: "Space Grotesk", "Avenir Next", "Helvetica Neue", sans-serif;
+  --bf-font-body: Inter, "Helvetica Neue", Arial, sans-serif;
+  --bf-font-cjk: "Noto Sans SC", "Source Han Sans CN", "PingFang SC", sans-serif;
+  --bf-radius-control: 2px;
+  --bf-radius-surface: 4px;
+  --bf-radius-round: 999px;
+  --bf-duration-instant: 100ms;
+  --bf-duration-fast: 220ms;
+  --bf-duration-base: 360ms;
+  --bf-ease-standard: ease;
+  --bf-ease-forward: cubic-bezier(0.22, 1, 0.36, 1);
+  --bf-shadow-float: 0 24px 70px rgba(17, 20, 23, 0.12);
+  --vscode-foreground: var(--bf-foreground);
+  --vscode-descriptionForeground: var(--bf-foreground-muted);
+  --vscode-disabledForeground: var(--bf-color-silver);
+  --vscode-editor-background: var(--bf-background);
+  --vscode-editor-foreground: var(--bf-foreground);
+  --vscode-sideBar-background: var(--bf-color-sand);
+  --vscode-sideBar-foreground: var(--bf-foreground);
+  --vscode-sideBar-border: var(--bf-divider);
+  --vscode-sideBarSectionHeader-background: var(--bf-color-soft-tone);
+  --vscode-sideBarSectionHeader-foreground: var(--bf-foreground);
+  --vscode-input-background: var(--bf-surface);
+  --vscode-input-foreground: var(--bf-foreground);
+  --vscode-input-placeholderForeground: var(--bf-foreground-subtle);
+  --vscode-input-border: transparent;
+  --vscode-focusBorder: var(--bf-focus);
+  --vscode-list-activeSelectionBackground: var(--bf-color-charcoal);
+  --vscode-list-activeSelectionForeground: var(--bf-color-warm-white);
+  --vscode-list-inactiveSelectionBackground: var(--bf-color-soft-tone);
+  --vscode-list-hoverBackground: var(--bf-surface);
+  --vscode-list-focusOutline: var(--bf-focus);
+  --vscode-button-background: var(--bf-color-charcoal);
+  --vscode-button-foreground: var(--bf-color-warm-white);
+  --vscode-button-hoverBackground: var(--bf-color-orange);
+  --vscode-button-secondaryBackground: transparent;
+  --vscode-button-secondaryForeground: var(--bf-foreground);
+  --vscode-button-secondaryHoverBackground: var(--bf-surface);
+  --vscode-badge-background: var(--bf-surface);
+  --vscode-badge-foreground: var(--bf-color-orange);
+  --vscode-menu-background: var(--bf-color-warm-white);
+  --vscode-menu-foreground: var(--bf-foreground);
+  --vscode-menu-selectionBackground: var(--bf-color-charcoal);
+  --vscode-menu-selectionForeground: var(--bf-color-warm-white);
+  --vscode-menu-border: var(--bf-divider);
+  --vscode-dropdown-background: var(--bf-color-warm-white);
+  --vscode-dropdown-foreground: var(--bf-foreground);
+  --vscode-dropdown-border: var(--bf-divider);
+  --vscode-panel-background: var(--bf-color-warm-white);
+  --vscode-panel-border: var(--bf-divider);
+  --vscode-tab-activeBackground: var(--bf-color-warm-white);
+  --vscode-tab-activeForeground: var(--bf-foreground);
+  --vscode-tab-inactiveBackground: var(--bf-color-sand);
+  --vscode-tab-inactiveForeground: var(--bf-foreground-muted);
+  --vscode-tab-activeBorderTop: var(--bf-color-orange);
+  --vscode-toolbar-hoverBackground: var(--bf-surface);
+  --vscode-textLink-foreground: #bd4216;
+  --vscode-textLink-activeForeground: #8e2c0d;
+  --vscode-progressBar-background: var(--bf-color-orange);
+  --vscode-terminal-background: var(--bf-color-charcoal);
+  --vscode-terminal-foreground: var(--bf-color-warm-white);
+  --vscode-editorWidget-background: var(--bf-color-warm-white);
+  --vscode-editorWidget-border: var(--bf-divider);
+  --vscode-editorHoverWidget-background: var(--bf-color-warm-white);
+  --vscode-editorHoverWidget-border: var(--bf-divider);
+  --vscode-diffEditor-insertedTextBackground: rgba(76, 127, 175, 0.2);
+  --vscode-diffEditor-removedTextBackground: rgba(255, 106, 51, 0.18);
+  --vscode-errorForeground: #b33a32;
+  --vscode-editorWarning-foreground: #9b6818;
+  --vscode-scrollbarSlider-background: rgba(107, 113, 119, 0.22);
+  --vscode-scrollbarSlider-hoverBackground: rgba(107, 113, 119, 0.38);
+  --vscode-scrollbarSlider-activeBackground: rgba(107, 113, 119, 0.52);
+  --wb-sidebar-bg: var(--bf-color-sand);
+  --cb-sidebar-bg: var(--bf-color-sand);
+  --cb-vscode-editor-background: var(--bf-background);
+  background: var(--bf-background);
+  color: var(--bf-foreground);
+  font-family: var(--bf-font-body), var(--bf-font-cjk);
+  font-optical-sizing: auto;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body[data-workbuddy-theme="bflabs-studio"] .conversation-sidebar {
+  background: var(--bf-color-sand) !important;
+  box-shadow: inset -1px 0 0 var(--bf-divider);
+}
+
+body[data-workbuddy-theme="bflabs-studio"] :is(.teams-container, .teams-content-wrapper, .teams-main-content, .cbChat, .claw-agent-chat-pane) {
+  background-color: var(--bf-background) !important;
+  color: var(--bf-foreground);
+}
+
+body[data-workbuddy-theme="bflabs-studio"] .detail-panel-container {
+  background: var(--bf-color-warm-white) !important;
+  box-shadow: inset 1px 0 0 var(--bf-divider);
+}
+
+body[data-workbuddy-theme="bflabs-studio"] :is(.codebuddy-menu-container, [role="menu"], [role="dialog"], [role="listbox"]) {
+  background: var(--bf-color-warm-white) !important;
+  color: var(--bf-foreground) !important;
+  border-color: var(--bf-divider) !important;
+  border-radius: var(--bf-radius-surface) !important;
+  box-shadow: var(--bf-shadow-float) !important;
+}
+
+body[data-workbuddy-theme="bflabs-studio"] :is(.wb-home-composer, [class*="_mainArea_"]) {
+  background: var(--bf-surface) !important;
+  color: var(--bf-foreground) !important;
+}
+
+body[data-workbuddy-theme="bflabs-studio"] .wb-home-composer {
+  border-radius: var(--bf-radius-surface) !important;
+  box-shadow: none !important;
+}
+
+body[data-workbuddy-theme="bflabs-studio"] [class*="_mainArea_"]:focus-within {
+  border-radius: var(--bf-radius-surface) !important;
+  box-shadow: 0 0 0 2px var(--bf-focus) !important;
+}
+
+body[data-workbuddy-theme="bflabs-studio"] :is(button, [role="button"], [role="menuitem"], [role="tab"]) {
+  border-radius: var(--bf-radius-control);
+  transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+  transition-duration: var(--bf-duration-fast);
+  transition-timing-function: var(--bf-ease-forward);
+}
+
+@media (hover: hover) {
+  body[data-workbuddy-theme="bflabs-studio"] :is(button, [role="button"]):hover:not(:disabled) {
+    transform: translateY(-2px);
+  }
+}
+
+body[data-workbuddy-theme="bflabs-studio"] :is(button, [role="button"]):active:not(:disabled) {
+  transform: translateY(0) scale(0.97);
+  transition-duration: var(--bf-duration-instant);
+}
+
+body[data-workbuddy-theme="bflabs-studio"] :is(button, [role="button"], [role="menuitem"], [role="tab"]):focus-visible {
+  outline: 2px solid var(--bf-focus) !important;
+  outline-offset: 3px;
+}
+
+body[data-workbuddy-theme="bflabs-studio"] :is(code, pre, .monaco-editor, .xterm) {
+  font-variant-numeric: tabular-nums;
+}
+
+body[data-workbuddy-theme="bflabs-studio"] :is(.monaco-editor, .xterm, .terminal-wrapper) {
+  border-radius: var(--bf-radius-surface);
+}
+
+body[data-workbuddy-theme="bflabs-studio"] ::selection {
+  background: var(--bf-color-orange);
+  color: var(--bf-color-charcoal);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-workbuddy-theme="bflabs-studio"] :is(button, [role="button"], [role="menuitem"], [role="tab"]) {
+    transition-duration: 1ms;
+  }
+
+  body[data-workbuddy-theme="bflabs-studio"] :is(button, [role="button"]):hover:not(:disabled),
+  body[data-workbuddy-theme="bflabs-studio"] :is(button, [role="button"]):active:not(:disabled) {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  body[data-workbuddy-theme="bflabs-studio"] :is(.codebuddy-menu-container, [role="menu"], [role="dialog"], [role="listbox"], .wb-home-composer) {
+    background: var(--bf-color-warm-white) !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  body[data-workbuddy-theme="bflabs-studio"] {
+    --bf-divider: var(--bf-color-graphite);
+    --vscode-input-border: var(--bf-color-graphite);
+    --vscode-menu-border: var(--bf-color-graphite);
+    --vscode-panel-border: var(--bf-color-graphite);
+  }
+}

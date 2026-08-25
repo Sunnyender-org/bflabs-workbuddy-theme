@@ -1,0 +1,23 @@
+{
+  "name": "bflabs-workbuddy-theme",
+  "version": "0.2.3",
+  "private": true,
+  "type": "module",
+  "description": "Reversible BF Labs runtime theme for Tencent WorkBuddy Desktop",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "validate": "node scripts/validate-theme.mjs",
+    "check": "npm test && npm run validate",
+    "inspect": "node scripts/runtime.mjs inspect",
+    "preview": "node scripts/capture-preview.mjs",
+    "build:release": "bash scripts/build-release.sh"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sunnyender-org/bflabs-workbuddy-theme.git"
+  }
+}

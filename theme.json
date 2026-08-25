@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "bflabs-studio",
+  "displayName": "BF Labs Studio",
+  "version": "0.2.3",
+  "mode": "light",
+  "css": "theme.css",
+  "embeddedAssets": {
+    "__BF_SPACE_500__": {
+      "path": "assets/fonts/space-grotesk-latin-500-normal.woff2",
+      "mime": "font/woff2"
+    },
+    "__BF_SPACE_600__": {
+      "path": "assets/fonts/space-grotesk-latin-600-normal.woff2",
+      "mime": "font/woff2"
+    },
+    "__BF_INTER_400__": {
+      "path": "assets/fonts/inter-latin-400-normal.woff2",
+      "mime": "font/woff2"
+    },
+    "__BF_INTER_500__": {
+      "path": "assets/fonts/inter-latin-500-normal.woff2",
+      "mime": "font/woff2"
+    },
+    "__BF_INTER_600__": {
+      "path": "assets/fonts/inter-latin-600-normal.woff2",
+      "mime": "font/woff2"
+    }
+  },
+  "testedWorkBuddy": [],
+  "targetWorkBuddy": ["5.3.11", "5.3.14"],
+  "sources": {
+    "bflabsUi": "f49157ff586adf91f6ba21f00f1dbbbb36e0afc5",
+    "appleDesign": "d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7"
+  },
+  "description": "使用 BF Labs UI 品牌真相与 Apple 交互纪律构建的 WorkBuddy 工作台主题。"
+}
